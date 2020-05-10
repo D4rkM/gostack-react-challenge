@@ -10,7 +10,6 @@ function App() {
   useEffect(() => {
     api.get('/repositories')
       .then(({data}) => {
-        console.log(data)
       setRepositories(data)
     })
   }, [], handleRemoveRepository)
